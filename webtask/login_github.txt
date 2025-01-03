@@ -1,0 +1,7 @@
+browse https://github.com/dfanghu
+fill username <- dfanghu
+fill password <- 
+if new device:
+        call github_verify_device
+
+

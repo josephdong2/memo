@@ -1,0 +1,7 @@
+echo "github verifies device if it is new by sending verification code to email"
+open email
+find email by title [GitHub] Please verify your device and by received time no earlier than 3 min ago
+find 6 digit number after Verification code:\s
+fill the input field in browser
+press continue
+
