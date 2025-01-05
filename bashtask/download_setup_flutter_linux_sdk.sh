@@ -21,7 +21,9 @@ if [ ! -d $FLUTTERSDK/bin ]; then
 	echo "unexpected that $FLUTTERSDK/bin has not been created";
 	exit 2;
 else
-	source lib1.sh;
-	add_to_path "$FLUTTERSDK/bin";
+	if [ -z $(which flutter) ]; then
+		source lib1.sh;
+		add_to_path "$FLUTTERSDK/bin";
+	fi;
 	tail ~/.bashrc
 fi;
