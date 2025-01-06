@@ -1,3 +1,4 @@
 #!/bin/bash -
-sudo bash ./sudo_init_ubuntu.sh $USER
-
+set euo pipefail
+sudo bash sudo_init_ubuntu.sh $USER
+bash download_setup_openjdk.sh
