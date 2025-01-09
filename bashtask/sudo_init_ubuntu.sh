@@ -1,6 +1,6 @@
 #!/bin/bash
 # e: exit on fail, o: pipefail on any sub and exit, x print script, u ignore undefined names
-if [ -z $1 ]; then
+if [ -z "$1" ]; then
 	echo "missing username at \$1";
 	exit 1;
 fi;

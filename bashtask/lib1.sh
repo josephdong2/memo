@@ -4,5 +4,5 @@ function add_to_path {
 }
 
 function lookup_keyring {
-	secret-tool lookup $1 $2
+	secret-tool lookup "$1" "$2"
 }
