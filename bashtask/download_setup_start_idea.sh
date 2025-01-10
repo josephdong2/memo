@@ -1,7 +1,7 @@
 #!/bin/bash -
 set -euxo pipefail
 FILENAME="ideaIU-2024.3.1.1.tar.gz"
-TARBALL="$HOME/Downloads/$FILENAME"
+TARBALL=~/Downloads/"$FILENAME"
 EXEFILE=idea
 if [ $# == 0 ]; then
 	DES="/opt/jetbrains"
@@ -24,7 +24,7 @@ fi;
 
 
 if [ ! -d "$BIN" ]; then
-	tar zxvf "$TARBALL" -C "$DES/";
+	sudo tar zxvf "$TARBALL" -C "$DES/";
 fi;
 
 if [ ! -f "/bin/$EXEFILE" ]; then

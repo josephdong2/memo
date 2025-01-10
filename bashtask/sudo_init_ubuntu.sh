@@ -28,4 +28,3 @@ echo "if error check /etc/apt/sources.list.d/ubuntu.sources"
 apt --yes install locales-all
 apt --yes install fail2ban
 bash sudo_apt_install.sh
-

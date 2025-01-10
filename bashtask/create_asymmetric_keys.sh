@@ -9,5 +9,3 @@ if [ -z "$2" ]; then
 	exit 1;
 fi;
 ssh-keygen -t rsa -b 4096 -f "/home/$1/.ssh/id_rsa" -N "$2" <<< n
-
-
