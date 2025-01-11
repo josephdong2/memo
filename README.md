@@ -15,10 +15,6 @@ For both paper and electronic devices, migrate to a new one every 5 years for re
 
 For encrypting the password file, the openssl utitlity can be useful, recommended cipher: aes-256-cfb/ofb. There is chacha20 but not xchacha20 yet.
 
-## Content structure
-Password file content is tab separated(people rarely use tab in password), each line in the form of site\tusername\tpassword
-e.g. github.com\tdfanghu\t*******
-
 # who wraps who among sh, py, js
 python (or many languages like c, c++, go, java) can dynamically write and execute shell script using subprocess.call or os.system, but the python part is static.
 
