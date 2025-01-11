@@ -1,6 +1,7 @@
 #!/bin/bash -
 
 # sudo mv /var/lib/dpkg/info/install-info.postinst /var/lib/dpkg/info/install-info.postinst.bad
+apt --yes install vim
 apt --yes install tasksel
 apt --yes install libsecret-tools
 apt --yes install net-tools
