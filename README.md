@@ -26,8 +26,3 @@ python has more language features.
 
 The best way is a sandwich: bash call python to run bash.
 
-
-
-
-
-
