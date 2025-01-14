@@ -8,13 +8,12 @@ Maximum tolerance about saved-down password is: save on a separate (independent)
 - online device may not be the most secure because network makes access easier compared with physical
 - dedicated offline phone with an offline password generator app and 2FA authentication (one for unlock phone, different one for unlock password app) is a good choice
 - paper in a hard-to-move, lockable safe is a good choice 
-- dedicated usb with encryption is a good choice, only problem is you need to save the encryption password using one of the above methods
+- dedicated usb drive storing an encrypted password file is a good choice, only problem is you need to save the encryption password using one of the above methods
 - GNOME keyring is balanced with security and convenience (unlocked at the beginning of session using the same password for session login)
+
 For both paper and electronic devices, migrate to a new one every 5 years for reliability
 
-## Content structure
-Password file content is tab separated(people rarely use tab in password), each line in the form of site\tusername\tpassword
-e.g. github.com\tdfanghu\t*******
+For encrypting the password file, the openssl utitlity can be useful, recommended cipher: aes-256-cfb/ofb. There is chacha20 but not xchacha20 yet.
 
 # who wraps who among sh, py, js
 python (or many languages like c, c++, go, java) can dynamically write and execute shell script using subprocess.call or os.system, but the python part is static.
