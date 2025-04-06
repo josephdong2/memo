@@ -9,7 +9,7 @@ else
 fi;
 SDKDIR=/opt
 mkdir -p $SDKDIR
-CURSDK=$SDKDIR/jdk-23.0.1
+CURSDK=$SDKDIR/jdk-21.0.2
 if [ -f "$DES/$FILENAME" ]; then
 	echo "file already exists";
 else
