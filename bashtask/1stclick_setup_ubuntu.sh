@@ -1,6 +1,6 @@
 #!/bin/bash -
 set -euo pipefail
-sudo bash sudo_init_ubuntu.sh "$USER"
+sudo bash sudo_init_ubuntu.sh
 bash download_setup_openjdk.sh
 sudo apt --yes install maven gradle
 bash download_setup_chrome.sh
