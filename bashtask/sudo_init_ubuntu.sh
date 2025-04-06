@@ -1,9 +1,5 @@
 #!/bin/bash
 # e: exit on fail, o: pipefail on any sub and exit, x print script, u ignore undefined names
-if [ -z "$1" ]; then
-	echo "missing username at \$1";
-	exit 1;
-fi;
 set -eo pipefail
 
 # during this script use en_US.UTF-8
